@@ -23,9 +23,9 @@ jobs:
       env:
         DEFAULT_BUMP: patch
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        WITH_V: false
+        WITH_V: true
         RELEASE_BRANCHES: main # signals that the PR being merged to develop, should have the prerelease_suffix
-        TAG_CONTEXT: branch 
+        TAG_CONTEXT: repo 
         PRERELEASE_SUFFIX: rc
         VERBOSE: true
         
