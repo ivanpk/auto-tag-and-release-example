@@ -19,7 +19,7 @@ jobs:
         
     - name: Bump the version and push the tag
       id: bump_tag
-      uses: anothrNick/github-tag-action@1.34.0
+      uses: anothrNick/github-tag-action@master #changes needed that aren't released yet but are on master
       env:
         DEFAULT_BUMP: patch
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
