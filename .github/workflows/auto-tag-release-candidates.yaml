@@ -25,7 +25,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         WITH_V: false
         RELEASE_BRANCHES: main # signals that the PR being merged to develop, should have the prerelease_suffix
-        TAG_CONTEXT: repo 
+        TAG_CONTEXT: branch 
         PRERELEASE_SUFFIX: rc
         VERBOSE: true
         
